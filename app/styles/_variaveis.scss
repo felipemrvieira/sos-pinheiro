@@ -1,0 +1,36 @@
+@font-face {
+  font-family: "opensans-bold";
+  src: url("../fonts/opensans-bold-webfont.ttf");
+}
+
+@font-face {
+  font-family: "opensans-light";
+  src: url("../fonts/opensans-light-webfont.ttf");
+}
+
+@font-face {
+  font-family: "open sans";
+  src: url("../fonts/opensans.woff2");
+}
+
+@font-face {
+  font-family: "gothan";
+  src: url("../fonts/Gotham-Font/Gotham-Light.otf");
+}
+
+@mixin magin-top-bottom($top: 16px, $bottom: 32px){
+  margin-top: $top;
+  margin-bottom: $bottom;
+}
+
+@mixin titulo-modulo(){
+  .titulo-modulo{
+    margin-bottom: 12px;
+    border-bottom: 1px solid #E5E5E5;
+    h3{
+        text-transform: uppercase;
+        font-size: 24px;
+        font-family: 'Open Sans',Helvetica,Arial,Sans-Serif;
+    }
+  }
+}
