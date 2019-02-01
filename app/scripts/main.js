@@ -7,3 +7,16 @@ console.log('\'Allo \'Allo!');
 // Uncomment to enable Bootstrap popovers
 // https://getbootstrap.com/docs/4.0/components/popovers/#example-enable-popovers-everywhere
 // $(function () { $('[data-toggle="popover"]').popover(); });
+
+$(document).ready(function(){
+    $(".button-competencia").click(function(){
+        $(".collapse").toggle(100);
+    });
+ 
+
+    $('.button-competencia').click(function(){
+        $('.botao').toggleClass('rotate');
+        $('.botao').toggleClass('rotate2');
+    });
+
+});

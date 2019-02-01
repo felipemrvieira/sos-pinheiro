@@ -1,0 +1,91 @@
+#sic-container{
+    @include magin-top-bottom();
+    @include titulo-modulo();
+    
+    .a-banner{
+      text-decoration: none;
+  
+      .banner{
+          background-image: url(../images/i-icon.png);
+          background-position: 5px 50%;
+          background-repeat: no-repeat;
+          height: 110px;
+          display: flex;
+          align-items: center;
+          padding: 8px 0 8px 85px;
+          margin-bottom: 12px;
+  
+          width: 24%;
+          float: left;
+          margin-right: 1%;
+          .info{
+              vertical-align: -webkit-baseline-middle;
+  
+              .titulo-banner{
+                font-family: 'Open Sans',Helvetica,Arial,Sans-Serif;
+                margin: 0;
+                padding: 0;
+                font-size: 25px;
+                line-height: 25px;
+                font-weight: 400;
+              }
+              .p-banner{
+                margin: 0;
+                padding: 0;
+                font-size: 18px;
+                font-weight: 300;
+                font-family: 'Open Sans',Helvetica,Arial,Sans-Serif;
+                line-height: 18px;
+                letter-spacing: 1px;
+              }
+          }
+      }
+  }
+    
+  #sic{
+      background-color: #ffbb29;
+      .info{
+          color: white;
+      }
+  }
+  #informacoes-publicas{
+      background-color: #fff1a6;
+      .info{
+          color: #00790d;
+      }
+  }
+  #portal{
+      background-color: #fff1a6;
+      .info{
+          color: #00790d;
+      }
+  } 
+  #ouvidoria-alagoas{
+      background-image: url(../images/ouvidoria-alagoas.png);
+      background-position: 5px 50%;
+      background-repeat: no-repeat;
+      background-size: 100%;
+      background-color: #fbf1f0;
+      padding-left: 130px;
+      text-indent: -9999px;   
+  }
+}
+
+
+@media (min-width: 860px) and (max-width: 1000px){
+    .banner{
+      width: 49% !important;
+    }
+    #ouvidoria-alagoas{
+        background-size: 70% !important;
+    }
+}
+
+@media (max-width: 859px){
+    .banner{
+      width: 100% !important;
+    }
+    #ouvidoria-alagoas{
+        background-size: 60% !important;
+    }
+}

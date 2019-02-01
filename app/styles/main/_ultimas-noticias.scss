@@ -1,0 +1,30 @@
+#ultimas-noticias-modulo{
+    @include magin-top-bottom();
+    @include titulo-modulo();
+    .noticias-lista{
+        .noticias-item{
+            margin-bottom: 12px;
+            .categoria-noticia{
+                color: #5f5f5f;
+                font-size: 12.8px;
+                text-transform: uppercase;
+            }
+            .titulo-noticia{
+                .link-noticia{
+                    color: #005DA6;
+                    font-size: 16px;
+                }
+               
+            }
+        }
+    }
+    .mais-noticias{
+        text-align: right;
+        .mais-noticias-link{
+            color: #005DA6;
+            font-size: 12.8px;
+            font-weight: 700;
+            font-family: 'Open Sans',Helvetica,Arial,Sans-Serif;
+        }
+    }
+}

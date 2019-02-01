@@ -1,0 +1,120 @@
+// Tela grande
+@media only screen and (min-width: 900px) {
+    #orgaos-defesa{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        position: relative;
+        top: -70px; 
+        #telefones{
+            text-align: center;
+            color: white;
+            font-family: "gothan";
+            margin-bottom: 12px;
+            span{
+                display: inline-block;
+                position: relative;  
+                &:before {
+                    right: 100%;
+                    margin-right: 20px;
+                    content: "";
+                    position: absolute;
+                    height: 5px;
+                    border-top: 1px solid white;
+                    top: 40%;
+                    width: 200px;
+                }
+                &:after {
+                    left: 100%;
+                    margin-left: 20px;
+                    content: "";
+                    position: absolute;
+                    height: 5px;
+                    border-top: 1px solid white;
+                    top: 40%;
+                    width: 200px;
+                }
+            }
+            
+        }
+        #orgaos-container{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            padding: 0 0 10px 0;
+            .orgao-defesa{
+                .orgao-info{
+                    font-family: "gothan-ultra";
+                    background-color: white;
+                    padding: 18px 24px;
+                    width: 200px;
+                    border-radius: 22px;
+                    text-align: center;
+                    -webkit-box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.2);
+                    -moz-box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.2);
+                    box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.2);
+                    transition: 0.3s;
+                    border-top: 6px solid #a90000;
+                    &:hover{
+                        cursor: pointer;
+                        -webkit-box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.4);
+                        -moz-box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.4);
+                        box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.4);
+                    }
+                }
+                .orgao-competencias{
+                    margin-top: 8px;;
+                    color: #8c8c8c;
+                    font-size: 14px;
+                    text-align: center;
+                    .collapse{
+                        width: 200px;
+                        max-width: 200px;
+                        text-align: justify;
+                    }
+                    .button-competencia{
+                        img{
+                            opacity: 0.5;
+                            &:hover{
+                                cursor: pointer;
+                            }
+                        }
+                        .rotate {
+                            transform: rotate(90deg);
+                            transition: .3s;
+                        }
+                        .rotate2 {
+                            transform: rotate(0deg);
+                            transition: .3s;
+                        }
+                    }
+                }
+                
+                .orgao-telefone{
+                    font-size: 60px;
+                    line-height: 50px;
+                    color: #a90000;
+                }
+                .orgao-titulo{
+                    text-transform: uppercase;
+                    font-size: 15px;
+                    line-height: 15px;
+                    color: #a90000;
+                }
+            }
+        }
+    }
+}
+
+
+// Tela media
+@media only screen and (max-width: 900px) {
+   
+}
+
+
+// Tela pequena
+@media only screen and (max-width: 600px) {
+    
+   
+}

@@ -1,0 +1,20 @@
+main{
+    background-color: $branco-cinza;
+    
+    .row{
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+    }
+    
+    @import "main/banner-principal";
+    @import "main/orgaos-defesa";
+    @import "main/ultimas-noticias";
+    @import "main/itens.scss"; 
+    @import "main/facebook.scss"; 
+    @import "main/instagram.scss"; 
+    @import "main/banner.scss"; 
+    @import "main/ouvidoria.scss";
+    @import "main/newsletter.scss";
+    @import "main/sic.scss";
+}

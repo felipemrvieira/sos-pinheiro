@@ -1,19 +1,16 @@
 @media only screen and (min-width: 900px) {
     #nav-principal{
-        background-color: #F8F7F7;
+        background-color: $branco-cinza;
         padding: 0;
         .navbar-collapse{
             .navbar-nav{
-                border-bottom: 1px #D6D6D6 solid;
-                border-bottom-width: 1px;
-                border-bottom-style: solid;
-                border-bottom-color: rgb(214, 214, 214);
+               
                 .nav-item{
                     .nav-link{
                         padding: 12px 24px 12px 0;
-                        color: #393939;
-                        font-family: opensans-light;
-                        font-size: 18px;
+                        color: #323757;
+                        font-family: 'open sans';
+                        font-size: 16px;
                     }
                 }
             }
@@ -67,7 +64,7 @@
 
 @media only screen and (max-width: 991px) {
     #nav-principal{
-        background-color: #F8F7F7;
+        background-color: $branco-cinza;
         padding: 10px;
         #hamburger-nav-principal{
             border: none;
@@ -126,7 +123,7 @@
 // Tela pequena
 @media only screen and (max-width: 600px) {
     #nav-principal{
-        background-color: #F8F7F7;
+        background-color: $branco-cinza;
         padding: 10px;
         .navbar-collapse{
             .navbar-nav{

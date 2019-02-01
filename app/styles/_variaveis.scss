@@ -18,6 +18,11 @@
   src: url("../fonts/Gotham-Font/Gotham-Light.otf");
 }
 
+@font-face {
+  font-family: "gothan-ultra";
+  src: url("../fonts/Gotham-Font/Gotham-Ultra.otf");
+}
+
 @mixin magin-top-bottom($top: 16px, $bottom: 32px){
   margin-top: $top;
   margin-bottom: $bottom;
@@ -34,3 +39,12 @@
     }
   }
 }
+
+.row{
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  margin: 0;
+}
+
+$branco-cinza: #fbfbfb;
