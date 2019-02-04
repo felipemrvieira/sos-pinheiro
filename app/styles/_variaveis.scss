@@ -1,6 +1,7 @@
 // $branco-cinza: #fbfbfb;
 $branco-cinza: #f6f6f6;
 $azul-escuro: #32394d;
+$card-radius: 4px;
 
 @font-face {
   font-family: "opensans-bold";
@@ -72,6 +73,10 @@ body{
   margin: 0;
 }
 
+.container{
+  // max-width: 1100px !important;
+}
+
 a{
   color: $azul-escuro;
   font-family: "myriad-bold";
@@ -80,12 +85,51 @@ a{
 .card{
   background-color: #fff;
   border: none;
+  border-radius: 15px;
   .card-header{
     background-color: #fff;
     border: none;
+    border-top-left-radius: $card-radius;
+    border-top-right-radius: $card-radius;
   }
   .card-footer{
     background-color: #fff;
     border: none;
+    border-bottom-left-radius: $card-radius;
+    border-bottom-right-radius: $card-radius;
   }
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+::-webkit-scrollbar-thumb {
+  background: #32394d;
+  border: 0px none #ffffff;
+  border-radius: 0px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #44506f;
+}
+::-webkit-scrollbar-thumb:active {
+  background: #44506f;
+}
+::-webkit-scrollbar-track {
+  background: #ececec;
+  border: 0px none #ffffff;
+  border-radius: 0px;
+}
+::-webkit-scrollbar-track:hover {
+  background: #ececec;
+}
+::-webkit-scrollbar-track:active {
+  background: #ececec;
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
 }
