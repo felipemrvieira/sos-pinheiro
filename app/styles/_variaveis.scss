@@ -1,3 +1,7 @@
+// $branco-cinza: #fbfbfb;
+$branco-cinza: #f6f6f6;
+$azul-escuro: #32394d;
+
 @font-face {
   font-family: "opensans-bold";
   src: url("../fonts/opensans-bold-webfont.ttf");
@@ -23,6 +27,17 @@
   src: url("../fonts/Gotham-Font/Gotham-Ultra.otf");
 }
 
+@font-face {
+  font-family: "myriad-bold";
+  src: url("../fonts/Myriad/MYRIADPRO-BOLD.woff");
+}
+
+@font-face {
+  font-family: "myriad-regular";
+  src: url("../fonts/Myriad/MYRIADPRO-REGULAR.woff");
+}
+
+
 @mixin magin-top-bottom($top: 16px, $bottom: 32px){
   margin-top: $top;
   margin-bottom: $bottom;
@@ -30,14 +45,24 @@
 
 @mixin titulo-modulo(){
   .titulo-modulo{
-    margin-bottom: 12px;
-    border-bottom: 1px solid #E5E5E5;
-    h3{
-        text-transform: uppercase;
-        font-size: 24px;
-        font-family: 'Open Sans',Helvetica,Arial,Sans-Serif;
-    }
+    font-size: 25px;
+    color: $azul-escuro;
+    font-family: "myriad-bold";
+    margin: 0;
   }
+}
+
+@mixin descricao-modulo(){
+  .descricao-modulo{
+    font-family: "myriad-regular";
+    color: #7a7c81;
+    font-size: 14px;
+    margin: 0;
+  }
+}
+
+body{
+  background-color: $branco-cinza;
 }
 
 .row{
@@ -47,4 +72,20 @@
   margin: 0;
 }
 
-$branco-cinza: #fbfbfb;
+a{
+  color: $azul-escuro;
+  font-family: "myriad-bold";
+}
+
+.card{
+  background-color: #fff;
+  border: none;
+  .card-header{
+    background-color: #fff;
+    border: none;
+  }
+  .card-footer{
+    background-color: #fff;
+    border: none;
+  }
+}
