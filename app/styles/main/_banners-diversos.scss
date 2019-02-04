@@ -1,0 +1,21 @@
+// @media only screen and (min-width: 900px) {
+
+    #banners-diversos{
+        @include magin-top-bottom();
+        .linha-banners{
+            align-items: flex-end;
+            position: relative;
+            top: -60px;
+        }
+       img{
+           width: 100%;
+           max-width: 100%;
+           overflow: hidden;
+       }
+
+    }
+// }
+
+// @media only screen and (max-width: 600px) {
+    
+// }

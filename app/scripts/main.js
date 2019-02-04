@@ -1,4 +1,3 @@
-console.log('\'Allo \'Allo!');
 
 // Uncomment to enable Bootstrap tooltips
 // https://getbootstrap.com/docs/4.0/components/tooltips/#example-enable-tooltips-everywhere
@@ -9,12 +8,17 @@ console.log('\'Allo \'Allo!');
 // $(function () { $('[data-toggle="popover"]').popover(); });
 
 $(document).ready(function(){
-    $(".button-competencia").click(function(){
-        $(".collapse").toggle(100);
-    });
+    // $(".button-competencia").click(function(){
+    //     $(".collapse").toggle(100);
+    // });
  
 
-    $('.button-competencia').click(function(){
+    // $('.button-competencia').click(function(){
+    //     $('.botao').toggleClass('rotate');
+    //     $('.botao').toggleClass('rotate2');
+    // });
+
+    $('.button-competencia').click(() => {
         $('.botao').toggleClass('rotate');
         $('.botao').toggleClass('rotate2');
     });
