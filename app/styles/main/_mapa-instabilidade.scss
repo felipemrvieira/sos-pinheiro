@@ -1,4 +1,4 @@
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 601px) {
 
     #mapa-instabilidade{
         @include magin-top-bottom();
@@ -35,10 +35,37 @@
 }
 
 @media only screen and (max-width: 600px) {
-    
+    #mapa-instabilidade{
+        @include magin-top-bottom();
+        @include titulo-modulo();
+        @include descricao-modulo();
+        position: relative;
+        top: -60px; 
+
+        .card-header{
+            padding: 18px;
+        }
+        .card-body{
+            padding: 0;
+        }
+
+        img{
+            width: 100%;
+            max-width: 100%;
+            overflow: hidden;
+        }
+
+        iframe{
+            margin: 0;
+            padding: 0;
+            border: none;
+            // Cabeçalho do mapa
+            .i4ewOd-pzNkMb-haAclf{
+                display: none !important;
+                background-color: aqua;
+            }
+        }
+
+    }
 }
 
-.i4ewOd-pzNkMb-haAclf{
-    display: none !important;
-    background-color: aqua;
-}
