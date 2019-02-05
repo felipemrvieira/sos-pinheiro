@@ -38,6 +38,11 @@ $card-radius: 4px;
   src: url("../fonts/Myriad/MYRIADPRO-REGULAR.woff");
 }
 
+@font-face {
+  font-family: "myriad-semibold";
+  src: url("../fonts/Myriad/MYRIADPRO-SEMIBOLD.woff");
+}
+
 
 @mixin magin-top-bottom($top: 16px, $bottom: 32px){
   margin-top: $top;

@@ -4,6 +4,8 @@
         @include magin-top-bottom();
         @include titulo-modulo();
         @include descricao-modulo();
+        position: relative;
+        top: -40px; 
 
         .card-header{
             padding: 18px;

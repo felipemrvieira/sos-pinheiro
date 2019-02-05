@@ -2,6 +2,7 @@
 
     #banners-diversos{
         @include magin-top-bottom();
+        
         .linha-banners{
             align-items: flex-end;
             position: relative;

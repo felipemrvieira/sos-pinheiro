@@ -3,7 +3,9 @@
     #plano-contingencia{
         // width: 100%;
         // max-width: 100%;
-        @include magin-top-bottom();
+        @include magin-top-bottom(10px, 16px);
+        position: relative;
+        top: -80px; 
 
         img{
             width: 100%;
