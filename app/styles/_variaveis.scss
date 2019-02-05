@@ -1,6 +1,8 @@
 // $branco-cinza: #fbfbfb;
 $branco-cinza: #f6f6f6;
 $azul-escuro: #32394d;
+$vermelho-claro:  rgb(255, 203, 207);
+$vermelho:  rgb(162, 18, 31);
 $card-radius: 4px;
 
 @font-face {
@@ -67,8 +69,20 @@ $card-radius: 4px;
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body{
   background-color: $branco-cinza;
+}
+
+::-moz-selection { /* Code for Firefox */
+  background: $vermelho-claro;
+}
+
+::selection {
+  background: $vermelho-claro;
 }
 
 .row{
