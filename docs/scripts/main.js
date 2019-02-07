@@ -1,0 +1,1 @@
+"use strict";$(document).ready(function(){$(".button-competencia").click(function(){$(".botao").toggleClass("rotate"),$(".botao").toggleClass("rotate2")})});
