@@ -153,13 +153,8 @@
                 </div>
               </a>
               <div class="orgao-competencias">
-                <div class="competencia-previa" 
-                  data-toggle="collapse"
-                  href="#collapseExample1" 
-                  role="button" 
-                  aria-expanded="false" 
-                  aria-controls="collapseExample1"
-                  >Desabamento, queda de árvore, feridos...</div>
+                <div class="competencia-previa" data-toggle="collapse" href="#collapseExample1" role="button"
+                  aria-expanded="false" aria-controls="collapseExample1">Desabamento, queda de árvore, feridos...</div>
                 <!-- <span class="button-competencia">
                   <img id="d" class="botao rotate2" width="20px" src="images/more.png" alt="" data-toggle="collapse"
                     href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample1">
@@ -179,13 +174,9 @@
                 <div class="orgao-titulo">Defesa Civil Municipal</div>
               </div>
               <div class="orgao-competencias">
-                <div class="competencia-previa" 
-                  data-toggle="collapse"
-                  href="#collapseExample2" 
-                  role="button" 
-                  aria-expanded="false" 
-                  aria-controls="collapseExample2"
-                  >Rachadura, afundamento, dúvida sobre os riscos...</div>
+                <div class="competencia-previa" data-toggle="collapse" href="#collapseExample2" role="button"
+                  aria-expanded="false" aria-controls="collapseExample2">Rachadura, afundamento, dúvida sobre os
+                  riscos...</div>
                 <!-- <span class="button-competencia">
                   <img class="botao rotate2" width="20px" src="images/more.png" alt="" data-toggle="collapse"
                     href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample2">
@@ -204,13 +195,8 @@
                 <div class="orgao-titulo">CASAL</div>
               </div>
               <div class="orgao-competencias">
-                <div class="competencia-previa"
-                  data-toggle="collapse"
-                  href="#collapseExample3" 
-                  role="button" 
-                  aria-expanded="false" 
-                  aria-controls="collapseExample3"
-                  >Falta de água, vazamento, rompimento...</div>
+                <div class="competencia-previa" data-toggle="collapse" href="#collapseExample3" role="button"
+                  aria-expanded="false" aria-controls="collapseExample3">Falta de água, vazamento, rompimento...</div>
                 <!-- <span class="button-competencia">
                   <img class="botao rotate2" width="20px" src="images/more.png" alt="" data-toggle="collapse"
                     href="#collapseExample3" role="button" aria-expanded="false" aria-controls="collapseExample3">
@@ -229,20 +215,38 @@
     </section>
     <!-- orgaos-defesa -->
 
-    <section class="container">
-      <p>+ TELEFONES ÚTEIS</p>
-      <p>ELETROBRÁS (0800 082 0196) - Ocorrências na rede elétrica.</p>
-      <p>ALGÁS (117) - Casos de vazamento nas tubulações de gás.</p>
-      <p>ANATEL (1331) - Para registrar reclamações contra prestadoras e pedidos de
-        informação à Agência. </p>
-      <p>DEFESA CIVIL ESTADUAL (3315-2843) - Atua em situações de emergência, após
-        ser acionada pelo município.</p>
-    </section>
-
-    <section id="plano-contingencia" class="container">
+    <section id="telefones-uteis" class="container">
       <div class="row">
         <div class="col-lg-12">
-          <a  href="plano-de-contingencia.html">
+          <div class="card" id="card-mapa" 
+            data-toggle="collapse" 
+            href="#corpo-card-telefones" 
+            role="button" 
+            aria-expanded="false"
+            aria-controls="corpo-card-telefones">
+            <div class="card-header">
+              <p class="titulo-componente">+ Telefones Úteis</p>
+            </div>
+            <div id="corpo-card-telefones" class="collapse card-body">
+              <div id="">
+                <ul>
+                  <li>ELETROBRÁS (0800 082 0196) - Ocorrências na rede elétrica.</li>
+                  <li>ALGÁS (117) - Casos de vazamento nas tubulações de gás.</li>
+                  <li>ANATEL (1331) - Para registrar reclamações contra prestadoras e pedidos de informação à Agência.</li>
+                  <li>DEFESA CIVIL ESTADUAL (3315-2843) - Atua em situações de emergência, após ser acionada pelo município.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="banner-plano-contingencia" class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <a href="plano-de-contingencia.html">
             <picture>
               <source media="(max-width: 600px)" srcset="images/contingencia-mobile.png">
               <img src="images/contingencia.png" alt="Plano de contingência">
@@ -346,7 +350,11 @@
       <div class="row">
         <div class="col-md-12">
           <div class="card">
-            <div class="card-header" data-toggle="collapse" href="#collapseArea" role="button" aria-expanded="false"
+            <div class="card-header" 
+              data-toggle="collapse" 
+              href="#collapseArea" 
+              role="button" 
+              aria-expanded="false"
               aria-controls="collapseArea">
               <h3 class="titulo-modulo">
                 Está em uma das áreas atingidas?
