@@ -70,8 +70,8 @@ $card-radius: 4px;
 }
 
 @mixin posicao-relativa($top: -60px){
-  position: relative;
-  top: $top;
+  // position: relative;
+  // top: $top;
 }
 
 html {

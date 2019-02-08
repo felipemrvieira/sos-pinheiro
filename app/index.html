@@ -3,11 +3,55 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="description" content="">
+
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>SOS pinheiro</title>
+
+  <!--
+  ***********************************
+  * ################################## SEO
+  ***********************************
+  -->
+  <meta name="title" content="Pinheiro Maceió" />
+  <meta name="description"
+    content="Website desenvolvido para levar informação à população do bairro do Pinheiro em Maceió.">
+  <meta name="keywords" content="Pinheiro,Maceió,Alagoas,Tremores,Rachaduras,Defesa Civil,Bombeiros">
+  <meta name="author" content="Fábrica de Sítios do ITEC AL, felipemrvieira@gmail.com">
+  <meta name='url' content='http://www.ppinheiro.al.gov.br'>
+  <meta name="robots" content="index,follow">
+  <meta name="copyright" content="Governo de Alagoas" />
+  <meta name="classification" content="Civil defense" />
+
+  <!--
+  ***********************************
+  * ################################## FACEBOOK
+  ***********************************
+  -->
+  <meta property="og:title" content="Pinheiro Maceió" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="" />
+  <meta property="og:image" content="" />
+  <meta property="og:site_name" content="Pinheiro Maceió" />
+  <meta property="og:description"
+    content="Website desenvolvido para levar informação à população do bairro do Pinheiro em Maceió." />
+  <meta property="og:locale" content="pt_BR" />
+  <meta property="article:section" content="" />
+  <meta property="article:author" content="https://www.facebook.com/" />
+  <meta property="article:publisher" content="https://www.facebook.com/" />
+  <meta property="article:tag" content="" />
+
+  <!--
+  ***********************************
+  * ################################## APPLE
+  ***********************************
+  -->
+  <meta name="apple-mobile-web-app-title" content="Pinheiro Maceió">
+  <meta name='apple-mobile-web-app-capable' content='yes'>
+  <meta name='apple-touch-fullscreen' content='yes'>
+  <meta name='apple-mobile-web-app-status-bar-style' content='blue'>
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <!-- Place favicon.ico in the root directory -->
+
+  <title>SOS pinheiro</title>
 
   <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css" type="text/css" />
 
@@ -41,8 +85,9 @@
   <nav class="navbar navbar-expand-lg navbar-light" id="nav-principal">
     <div class="container">
 
-      <button id="hamburger-nav-principal" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <button id="hamburger-nav-principal" class="navbar-toggler" type="button" data-toggle="collapse"
+        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
@@ -55,7 +100,7 @@
             <a class="nav-link" href="#telefones">Telefones</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#plano-contingencia">Plano de Contingência</a>
+            <a class="nav-link" href="plano-de-contingencia.html">Plano de Contingência</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#card-mapa">Mapa</a>
@@ -64,7 +109,7 @@
             <a class="nav-link" href="#card-noticias">Notícias</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#informacoes">Informações</a>
+            <a class="nav-link" href="#informacoes">Atuação Integrada</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="perguntas-e-respostas.html">Dúvidas Frequentes</a>
@@ -101,19 +146,24 @@
           <div id="orgaos-container">
 
             <div class="orgao-defesa">
-              <div class="orgao-info">
-                <div class="orgao-telefone">193</div>
-                <div class="orgao-titulo">Corpo de Bombeiros</div>
-              </div>
+              <a href="tel:193">
+                <div class="orgao-info">
+                  <div class="orgao-telefone">193</div>
+                  <div class="orgao-titulo">Corpo de Bombeiros</div>
+                </div>
+              </a>
               <div class="orgao-competencias">
-                <span>Desabamentos, rachaduras</span>
+                <span>Desabamento, queda de árvore, feridos</span>
                 <span class="button-competencia">
                   <img id="d" class="botao rotate2" width="20px" src="images/more.png" alt="" data-toggle="collapse"
                     href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample1">
                 </span>
                 <div class="collapse" id="collapseExample1">
-                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil
-                  anim keffiyeh helvetica
+                  <b>Disque 193</b> para ocorrências envolvendo desabamentos, quedas de árvores e
+                  postes, inundação, incêndio, choque elétrico e vazamento de produto perigoso.
+
+                  Os bombeiros fazem o resgate de pessoas ou animais em situação de risco. Eles
+                  também devem ser acionados em casos de acidentes com vítima.
                 </div>
               </div>
             </div>
@@ -123,14 +173,16 @@
                 <div class="orgao-titulo">Defesa Civil Municipal</div>
               </div>
               <div class="orgao-competencias">
-                <span>Desabamentos, rachaduras</span>
+                <span>Rachadura, afundamento, dúvida sobre os riscos</span>
                 <span class="button-competencia">
-                  <img class="botao rotate2" width="20px" src="images/more.png" alt="" data-toggle="collapse" href="#collapseExample2"
-                    role="button" aria-expanded="false" aria-controls="collapseExample2">
+                  <img class="botao rotate2" width="20px" src="images/more.png" alt="" data-toggle="collapse"
+                    href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample2">
                 </span>
                 <div class="collapse" id="collapseExample2">
-                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil
-                  anim keffiyeh helvetica
+                  Ligue para a Defesa Civil Municipal quando perceber o agravamento dos
+                  fenômenos - rachaduras e/ou afundamentos - nas casas, apartamentos e/ou
+                  ruas. Você também deve ligar sempre que tiver dúvida quanto à necessidade de
+                  sair da edificação.
                 </div>
               </div>
             </div>
@@ -140,18 +192,18 @@
                 <div class="orgao-titulo">CASAL</div>
               </div>
               <div class="orgao-competencias">
-                <span>Desabamentos, rachaduras</span>
+                <span>Falta de água, vazamento, rompimento</span>
                 <span class="button-competencia">
-                  <img class="botao rotate2" width="20px" src="images/more.png" alt="" data-toggle="collapse" href="#collapseExample3"
-                    role="button" aria-expanded="false" aria-controls="collapseExample3">
+                  <img class="botao rotate2" width="20px" src="images/more.png" alt="" data-toggle="collapse"
+                    href="#collapseExample3" role="button" aria-expanded="false" aria-controls="collapseExample3">
                 </span>
                 <div class="collapse" id="collapseExample3">
-                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil
-                  anim keffiyeh helvetica
+                  Entre em contato com a Casal em casos de interrupção no abastecimento de
+                  água, vazamentos e rompimentos de canos e tubulações em casas,
+                  apartamentos e/ou ruas.
                 </div>
               </div>
             </div>
-
           </div>
         </div>
       </div>
@@ -159,10 +211,20 @@
     </section>
     <!-- orgaos-defesa -->
 
+    <section class="container">
+      <p>+ TELEFONES ÚTEIS</p>
+      <p>ELETROBRÁS (0800 082 0196) - Ocorrências na rede elétrica.</p>
+      <p>ALGÁS (117) - Casos de vazamento nas tubulações de gás.</p>
+      <p>ANATEL (1331) - Para registrar reclamações contra prestadoras e pedidos de
+        informação à Agência. </p>
+      <p>DEFESA CIVIL ESTADUAL (3315-2843) - Atua em situações de emergência, após
+        ser acionada pelo município.</p>
+    </section>
+
     <section id="plano-contingencia" class="container">
       <div class="row">
         <div class="col-lg-12">
-          <a href="#">
+          <a  href="plano-de-contingencia.html">
             <picture>
               <source media="(max-width: 600px)" srcset="images/contingencia-mobile.png">
               <img src="images/contingencia.png" alt="Plano de contingência">
@@ -184,9 +246,8 @@
             </div>
             <div class="card-body">
               <div id="mapa">
-                <iframe src="https://www.google.com/maps/d/embed?mid=11FGFOjMlPOPV2G7abPVRdH9dggmS2hBA" 
-                width="100%"
-                  ></iframe>
+                <iframe src="https://www.google.com/maps/d/embed?mid=11FGFOjMlPOPV2G7abPVRdH9dggmS2hBA"
+                  width="100%"></iframe>
               </div>
             </div>
             <div class="card-footer text-muted">
@@ -270,33 +331,28 @@
             <div class="card-header" data-toggle="collapse" href="#collapseArea" role="button" aria-expanded="false"
               aria-controls="collapseArea">
               <h3 class="titulo-modulo">
-                Está em uma das áreas afetadas?
+                Está em uma das áreas atingidas?
               </h3>
             </div>
             <div class="card-body collapse" id="collapseArea">
               <div class="">
                 <div class="">
                   <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Asperiores earum veritatis, optio deleniti neque ratione
-                    facere accusamus laborum cum, dignissimos cupiditate tempora
-                    dolorem nobis maiores debitis nesciunt quasi, temporibus dolor.
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Asperiores earum veritatis, optio deleniti neque ratione
-                    facere accusamus laborum cum, dignissimos cupiditate tempora
-                    dolorem nobis maiores debitis nesciunt quasi, temporibus dolor.
+                    A área vermelha corresponde aos locais com maior intensidade de deformação.
+                    Ou seja, com maior concentração de trincas/rachaduras em imóveis ou vias
+                    públicas ou onde ocorrem trincas/rachaduras com maiores aberturas, indicando
+                    que o processo de deformação do solo é mais intenso nesta área.
                   </p>
                   <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Asperiores earum veritatis, optio deleniti neque ratione
-                    facere accusamus laborum cum, dignissimos cupiditate tempora
-                    dolorem nobis maiores debitis nesciunt quasi, temporibus dolor.
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Asperiores earum veritatis, optio deleniti neque ratione
-                    facere accusamus laborum cum, dignissimos cupiditate tempora
-                    dolorem nobis maiores debitis nesciunt quasi, temporibus dolor.
+                    As áreas laranja e amarela correspondem aos locais onde esse processo foi
+                    identificado como de intensidade alta e média.
                   </p>
-
+                  <p>
+                    A orientação é que, diante do surgimento de novas fissuras ou agravamento das
+                    existentes, o cidadão deve acionar a Defesa Civil Municipal para avaliação do
+                    imóvel. Você também deve ligar sempre que tiver dúvida quanto à necessidade de
+                    sair da edificação.
+                  </p>
 
                 </div>
               </div>
@@ -326,7 +382,7 @@
           <div class="card">
             <div class="card-header">
               <h3 class="titulo-modulo">
-                Informações
+                Atuação Integrada
               </h3>
             </div>
           </div>
@@ -345,18 +401,22 @@
               <div class="pergunta-resposta">
                 <div class="pergunta" data-toggle="collapse" href="#pergunta1" role="button" aria-expanded="false"
                   aria-controls="pergunta1">
-                  Lorem ipsum dolor sit amet?
+                  Aluguel Social
                 </div>
                 <div class="resposta collapse" id="pergunta1">
                   <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Asperiores earum veritatis, optio deleniti neque ratione
-                    facere accusamus laborum cum, dignissimos cupiditate tempora
-                    dolorem nobis maiores debitis nesciunt quasi, temporibus dolor.
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Asperiores earum veritatis, optio deleniti neque ratione
-                    facere accusamus laborum cum, dignissimos cupiditate tempora
-                    dolorem nobis maiores debitis nesciunt quasi, temporibus dolor.
+                    A Prefeitura de Maceió está fazendo, desde o começo de janeiro de 2019, o
+                    cadastro de famílias que receberam recomendação da Defesa Civil Municipal
+                    para deixar seus imóveis em decorrência do agravamento das fissuras identificadas
+                    na região. Aquelas que não têm condições de buscar uma nova moradia sem auxílio financeiro
+                    estão aptas a receber a ajuda humanitária do Governo Federal.
+                  </p>
+                  <p>
+                    O Governo Federal já começou a repassar as verbas e, inicialmente, foram
+                    contempladas com o primeiro lote as 80 famílias que tiveram os imóveis mais danificados
+                    e que, portanto, foram classificados como de maior risco. O valor para cada proprietário
+                    é de R$ 1 mil mensais por seis meses, totalizando R$ 480 mil em recursos. O benefício
+                    pode ser renovado, segundo portaria do Ministério do Desenvolvimento Regional.
                   </p>
                 </div>
                 <hr>
@@ -366,18 +426,18 @@
               <div class="pergunta-resposta">
                 <div class="pergunta" data-toggle="collapse" href="#pergunta1" role="button" aria-expanded="false"
                   aria-controls="pergunta1">
-                  Lorem ipsum dolor sit amet?
+                  Cadastro e remoção de moradores
                 </div>
                 <div class="resposta collapse" id="pergunta1">
                   <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Asperiores earum veritatis, optio deleniti neque ratione
-                    facere accusamus laborum cum, dignissimos cupiditate tempora
-                    dolorem nobis maiores debitis nesciunt quasi, temporibus dolor.
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Asperiores earum veritatis, optio deleniti neque ratione
-                    facere accusamus laborum cum, dignissimos cupiditate tempora
-                    dolorem nobis maiores debitis nesciunt quasi, temporibus dolor.
+                    A Prefeitura de Maceió faz o levantamento e o cadastro das famílias que residem nos imóveis
+                    atingidos.
+                    A Defesa Civil Municipal está indo às áreas mapeadas pelo Serviço Geológico do Brasil (CPRM) e
+                    atendendo
+                    também chamados da população pelo telefone 0800 030 6205. A partir do recebimento das demandas, os
+                    técnicos avaliam os imóveis e, caso seja constatado o risco decorrente das fissuras, é recomendada a
+                    evacuação e é realizado o cadastro.
+                    Os dados são encaminhados ao Governo Federal para a concessão do auxílio-moradia.
                   </p>
                 </div>
                 <hr>
@@ -387,18 +447,19 @@
               <div class="pergunta-resposta">
                 <div class="pergunta" data-toggle="collapse" href="#pergunta1" role="button" aria-expanded="false"
                   aria-controls="pergunta1">
-                  Lorem ipsum dolor sit amet?
+                  Rachaduras e afundamentos
                 </div>
                 <div class="resposta collapse" id="pergunta1">
                   <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Asperiores earum veritatis, optio deleniti neque ratione
-                    facere accusamus laborum cum, dignissimos cupiditate tempora
-                    dolorem nobis maiores debitis nesciunt quasi, temporibus dolor.
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Asperiores earum veritatis, optio deleniti neque ratione
-                    facere accusamus laborum cum, dignissimos cupiditate tempora
-                    dolorem nobis maiores debitis nesciunt quasi, temporibus dolor.
+                    Ao perceber rachaduras e/ou afundamentos em casas, apartamentos e/ou ruas, o morador deve acionar a
+                    Defesa Civil Municipal (0800 030 6205), que fará uma vistoria minuciosa. Também é importante ligar
+                    sempre que tiver dúvida quanto à necessidade de sair da edificação.
+
+                    Conforme orientação da Defesa Civil Municipal, as edificações (residenciais e comerciais)
+                    localizadas nas áreas de risco muito alto (áreas vermelhas) precisam ser evacuadas.
+
+
+
                   </p>
                 </div>
                 <hr>
@@ -423,7 +484,7 @@
               <div class="pergunta-resposta">
                 <div class="pergunta" data-toggle="collapse" href="#pergunta1" role="button" aria-expanded="false"
                   aria-controls="pergunta1">
-                  Lorem ipsum dolor sit amet?
+                  Plano de evacuação
                 </div>
                 <div class="resposta collapse" id="pergunta1">
                   <p>
@@ -444,7 +505,7 @@
               <div class="pergunta-resposta">
                 <div class="pergunta" data-toggle="collapse" href="#pergunta1" role="button" aria-expanded="false"
                   aria-controls="pergunta1">
-                  Lorem ipsum dolor sit amet?
+                  Acidente e Socorro
                 </div>
                 <div class="resposta collapse" id="pergunta1">
                   <p>
@@ -465,7 +526,7 @@
               <div class="pergunta-resposta">
                 <div class="pergunta" data-toggle="collapse" href="#pergunta1" role="button" aria-expanded="false"
                   aria-controls="pergunta1">
-                  Lorem ipsum dolor sit amet?
+                  CASAL
                 </div>
                 <div class="resposta collapse" id="pergunta1">
                   <p>
@@ -501,7 +562,7 @@
               <div class="pergunta-resposta">
                 <div class="pergunta" data-toggle="collapse" href="#pergunta1" role="button" aria-expanded="false"
                   aria-controls="pergunta1">
-                  Lorem ipsum dolor sit amet?
+                  Causas Possíveis
                 </div>
                 <div class="resposta collapse" id="pergunta1">
                   <p>
@@ -522,7 +583,7 @@
               <div class="pergunta-resposta">
                 <div class="pergunta" data-toggle="collapse" href="#pergunta1" role="button" aria-expanded="false"
                   aria-controls="pergunta1">
-                  Lorem ipsum dolor sit amet?
+                  Relatórios e Estudos
                 </div>
                 <div class="resposta collapse" id="pergunta1">
                   <p>
@@ -543,7 +604,7 @@
               <div class="pergunta-resposta">
                 <div class="pergunta" data-toggle="collapse" href="#pergunta1" role="button" aria-expanded="false"
                   aria-controls="pergunta1">
-                  Lorem ipsum dolor sit amet?
+                  Força-tarefa
                 </div>
                 <div class="resposta collapse" id="pergunta1">
                   <p>
