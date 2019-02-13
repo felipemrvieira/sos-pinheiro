@@ -46,15 +46,15 @@
   -->
 
 
-  <link rel="apple-touch-icon" sizes="57x57" href="/icons/apple-icon-57x57.png">
-  <link rel="apple-touch-icon" sizes="60x60" href="/icons/apple-icon-60x60.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="/icons/apple-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="/icons/apple-icon-76x76.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="/icons/apple-icon-114x114.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="/icons/apple-icon-120x120.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="/icons/apple-icon-144x144.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="/icons/apple-icon-152x152.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+  <link rel="apple-touch-icon" sizes="57x57" href="icons/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="icons/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="icons/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="icons/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="icons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="icons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="icons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="icons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-icon-180x180.png">
 
   <meta name="apple-mobile-web-app-title" content="Pinheiro Maceió">
   <meta name='apple-mobile-web-app-capable' content='yes'>
@@ -63,17 +63,20 @@
   <!-- Place favicon.ico in the root directory -->
 
 
-  <link rel="icon" type="image/png" sizes="192x192" href="/icons/android-icon-192x192.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="96x96" href="/icons/favicon-96x96.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
-  <link rel="manifest" href="/icons/manifest.json">
+  <link rel="icon" type="image/png" sizes="192x192" href="icons/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="icons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+  <link rel="manifest" href="icons/manifest.json">
   <meta name="msapplication-TileColor" content="#ffffff">
-  <meta name="msapplication-TileImage" content="/icons/ms-icon-144x144.png">
+  <meta name="msapplication-TileImage" content="icons/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
   <title>Pinheiro Maceió</title>
 
+
+  <!-- build:css styles/vendor/bootstrap.css -->
   <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css" type="text/css" />
+  <!-- endbuild -->
 
   <!-- build:css styles/main.css -->
   <link rel="stylesheet" href="styles/main.css">
@@ -86,6 +89,7 @@
 
 
 </head>
+
 
 <body>
   <header>
@@ -300,14 +304,10 @@
 
               <!-- Perguntas e respostas -->
               <div class="pergunta-resposta">
-                <div class="pergunta"
-                 data-toggle="collapse" 
-                href="#pergunta1" 
-                role="button" 
-                aria-expanded="false"
+                <a class="pergunta" data-toggle="collapse" href="#pergunta1" role="button" aria-expanded="false"
                   aria-controls="pergunta1">
                   Quando discar 193 - Corpo de Bombeiros?
-                </div>
+                </a>
                 <div class="resposta collapse" id="pergunta1">
                   <p>
                     Disque 193 para ocorrências envolvendo desabamentos, quedas de árvores e postes,
@@ -323,15 +323,11 @@
               <!-- Perguntas e respostas -->
               <!-- Perguntas e respostas -->
               <div class="pergunta-resposta">
-                <div class="pergunta" 
-                data-toggle="collapse" 
-                href="#pergunta2" 
-                role="button" 
-                aria-expanded="false"
+                <a class="pergunta" data-toggle="collapse" href="#pergunta2" role="button" aria-expanded="false"
                   aria-controls="pergunta2">
                   Quando chamar a Defesa Civil Municipal (0800 030 6205)?
 
-                </div>
+                </a>
                 <div class="resposta collapse" id="pergunta2">
                   <p>
                     Quando perceber o agravamento dos fenômenos - rachaduras e/ou afundamentos - nas
@@ -345,11 +341,11 @@
               <!-- Perguntas e respostas -->
               <!-- Perguntas e respostas -->
               <div class="pergunta-resposta">
-                <div class="pergunta" data-toggle="collapse" href="#pergunta3" role="button" aria-expanded="false"
+                <a class="pergunta" data-toggle="collapse" href="#pergunta3" role="button" aria-expanded="false"
                   aria-controls="pergunta3">
                   Que cuidados devo tomar em caso de queda de árvores?
 
-                </div>
+                </a>
                 <div class="resposta collapse" id="pergunta3">
                   <p>
                     Disque 193 - Corpo de Bombeiros e repasse os detalhes de localização e de
@@ -380,11 +376,11 @@
 
               <!-- Perguntas e respostas -->
               <div class="pergunta-resposta">
-                <div class="pergunta" data-toggle="collapse" href="#pergunta4" role="button" aria-expanded="false"
+                <a class="pergunta" data-toggle="collapse" href="#pergunta4" role="button" aria-expanded="false"
                   aria-controls="pergunta4">
                   Que cuidados devo tomar em caso de queda de postes?
 
-                </div>
+                </a>
                 <div class="resposta collapse" id="pergunta4">
                   <p>
                     Disque 193 - Corpo de Bombeiros e ligue 0800 082 0196 - Eletrobrás.
@@ -422,11 +418,11 @@
 
               <!-- Perguntas e respostas -->
               <div class="pergunta-resposta">
-                <div class="pergunta" data-toggle="collapse" href="#pergunta5" role="button" aria-expanded="false"
+                <a class="pergunta" data-toggle="collapse" href="#pergunta5" role="button" aria-expanded="false"
                   aria-controls="pergunta5">
                   O que fazer nos casos afundamento de rua, quintal ou residência?
 
-                </div>
+                </a>
                 <div class="resposta collapse" id="pergunta5">
                   <p>
                     Afaste-se do local de risco imediatamente e procure um lugar seguro, fora das
@@ -443,11 +439,11 @@
 
               <!-- Perguntas e respostas -->
               <div class="pergunta-resposta">
-                <div class="pergunta" data-toggle="collapse" href="#pergunta6" role="button" aria-expanded="false"
+                <a class="pergunta" data-toggle="collapse" href="#pergunta6" role="button" aria-expanded="false"
                   aria-controls="pergunta6">
                   Quando devo deixar minha casa?
 
-                </div>
+                </a>
                 <div class="resposta collapse" id="pergunta6">
                   <p>
                     Conforme orientação da Defesa Civil Municipal, as edificações
@@ -461,11 +457,11 @@
 
               <!-- Perguntas e respostas -->
               <div class="pergunta-resposta">
-                <div class="pergunta" data-toggle="collapse" href="#pergunta7" role="button" aria-expanded="false"
+                <a class="pergunta" data-toggle="collapse" href="#pergunta7" role="button" aria-expanded="false"
                   aria-controls="pergunta7">
                   Está em dúvida quanto aos riscos de seu imóvel?
 
-                </div>
+                </a>
                 <div class="resposta collapse" id="pergunta7">
                   <p>
                     A qualquer sinal de anormalidade, rachaduras ou afundamento de alguma área do
@@ -479,10 +475,10 @@
 
               <!-- Perguntas e respostas -->
               <div class="pergunta-resposta">
-                <div class="pergunta" data-toggle="collapse" href="#pergunta8" role="button" aria-expanded="false"
+                <a class="pergunta" data-toggle="collapse" href="#pergunta8" role="button" aria-expanded="false"
                   aria-controls="pergunta8">
                   Em caso de risco, é melhor permanecer em casa ou me dirigir a outro local?
-                </div>
+                </a>
                 <div class="resposta collapse" id="pergunta8">
                   <p>
                     Ao perceber o aumento de rachaduras e/ou afundamentos, saia do imóvel e busque
@@ -497,10 +493,10 @@
 
               <!-- Perguntas e respostas -->
               <div class="pergunta-resposta">
-                <div class="pergunta" data-toggle="collapse" href="#pergunta9" role="button" aria-expanded="false"
+                <a class="pergunta" data-toggle="collapse" href="#pergunta9" role="button" aria-expanded="false"
                   aria-controls="pergunta9">
                   Em caso de acionamento do Plano de Evacuação do bairro, o que devo fazer?
-                </div>
+                </a>
                 <div class="resposta collapse" id="pergunta9">
                   <p>
                     Dirija-se ao ponto de encontro previsto pela Defesa Civil Municipal. Escolha a
@@ -514,11 +510,11 @@
 
               <!-- Perguntas e respostas -->
               <div class="pergunta-resposta">
-                <div class="pergunta" data-toggle="collapse" href="#pergunta10" role="button" aria-expanded="false"
+                <a class="pergunta" data-toggle="collapse" href="#pergunta10" role="button" aria-expanded="false"
                   aria-controls="pergunta10">
                   Moro em prédio: em caso de algum tremor, devo descer de escada ou elevador?
 
-                </div>
+                </a>
                 <div class="resposta collapse" id="pergunta10">
                   <p>
                     Em caso de risco, utilize as escadas de emergência das edificações. Elevadores
@@ -532,10 +528,10 @@
 
               <!-- Perguntas e respostas -->
               <div class="pergunta-resposta">
-                <div class="pergunta" data-toggle="collapse" href="#pergunta11" role="button" aria-expanded="false"
+                <a class="pergunta" data-toggle="collapse" href="#pergunta11" role="button" aria-expanded="false"
                   aria-controls="pergunta11">
                   Onde posso buscar informações atualizadas sobre a situação do Pinheiro?
-                </div>
+                </a>
                 <div class="resposta collapse" id="pergunta11">
                   <p>
                     Acompanhe este site, o portal da Prefeitura de Maceió e siga redes sociais
@@ -553,26 +549,36 @@
 
               <!-- Perguntas e respostas -->
               <div class="pergunta-resposta">
-                <div class="pergunta" data-toggle="collapse" href="#pergunta12" role="button" aria-expanded="false"
+                <a class="pergunta" data-toggle="collapse" href="#pergunta12" role="button" aria-expanded="false"
                   aria-controls="pergunta12">
                   Para quem ligar?
 
-                </div>
+                </a>
                 <div class="resposta collapse" id="pergunta12">
                   <p>
                     ELETROBRÁS (0800 082 0196) - Ocorrências na rede elétrica.
+                  </p>
+                  <p>
                     ALGÁS (117) - Casos de vazamento nas tubulações de gás.
+                  </p>
+                  <p>
                     CASAL (0800 082 0195) - Interrupção no abastecimento de água, vazamentos e
                     rompimentos de canos e tubulações.
+                  </p>
+                  <p>
                     CORPO DE BOMBEIROS MILITAR (193)
+                  </p>
+                  <p>
                     DEFESA CIVIL MUNICIPAL (0800 030 6205)
+                  </p>
+                  <p>
                     DEFESA CIVIL ESTADUAL (3315-2843)
                   </p>
+
                 </div>
                 <hr>
               </div>
               <!-- Perguntas e respostas -->
-
 
 
             </div>
@@ -603,36 +609,36 @@
           </div>
         </div>
 
-        <div class="col-lg-6">
+        <div class="col-lg-12">
           <h5 class="phone">(82) 3315-3608</h5>
           <address>
-            <p>Rua Cincinato Pinto, s/n </p>
-            <p>Centro - CEP 57020-050</p>
-            <p>Maceió - Alagoas</p>
+            <p>Rua Cincinato Pinto, s/n
+              Centro - CEP 57020-050.
+              Maceió - Alagoas</p>
           </address>
         </div>
 
-        <div class="col-lg-6">
-          <div class="row">
-            <div class="col-lg-6 col-sm-6 footer-menu">
-              <ul>
-                <li class="footer-menu-item"><a href="#"> Início</a></li>
-                <li class="footer-menu-item"><a href="#"> Institucional</a></li>
-                <li class="footer-menu-item"><a href="#"> Fotos</a></li>
-                <li class="footer-menu-item"><a href="#"> Vídeos</a></li>
-
-              </ul>
+        <!-- <div class="col-lg-6">
+            <div class="row">
+              <div class="col-lg-6 col-sm-6 footer-menu">
+                <ul>
+                  <li class="footer-menu-item"><a href="#"> Início</a></li>
+                  <li class="footer-menu-item"><a href="#"> Institucional</a></li>
+                  <li class="footer-menu-item"><a href="#"> Fotos</a></li>
+                  <li class="footer-menu-item"><a href="#"> Vídeos</a></li>
+  
+                </ul>
+              </div>
+              <div class="col-lg-6 col-sm-6 footer-menu">
+                <ul>
+                  <li class="footer-menu-item"><a href="#"> Notícias</a></li>
+                  <li class="footer-menu-item"><a href="#"> Secretarias</a></li>
+                  <li class="footer-menu-item"><a href="#"> Assessorias</a></li>
+                  <li class="footer-menu-item"><a href="#"> Diário Oficial</a></li>
+                </ul>
+              </div>
             </div>
-            <div class="col-lg-6 col-sm-6 footer-menu">
-              <ul>
-                <li class="footer-menu-item"><a href="#"> Notícias</a></li>
-                <li class="footer-menu-item"><a href="#"> Secretarias</a></li>
-                <li class="footer-menu-item"><a href="#"> Assessorias</a></li>
-                <li class="footer-menu-item"><a href="#"> Diário Oficial</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
+          </div> -->
 
         <div class="col-lg-12">
           <div class="copyright">
@@ -647,15 +653,16 @@
 
 
   <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-62371147-3"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'UA-62371147-3');
-</script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-62371147-3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-62371147-3');
+  </script>
 
   <!-- build:js scripts/vendor.js -->
 

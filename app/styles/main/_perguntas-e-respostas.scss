@@ -22,7 +22,11 @@
             .card-body{
                 margin: 0 64px;
                 .pergunta-resposta{
+                    a{
+                        text-decoration: none;
+                    }
                     .pergunta{
+                        display: block;
                         margin-bottom: 12px;
                         font-family: "myriad-semibold";
                         font-size: 20px;
@@ -74,8 +78,12 @@
             .card-body{
                 // margin: 0 64px;
                 .pergunta-resposta{
+                    a{
+                        text-decoration: none;
+                    }
                     .pergunta{
                         margin-bottom: 12px;
+                        display: block;
                         font-family: "myriad-semibold";
                         font-size: 17px;
                         text-align: center;
