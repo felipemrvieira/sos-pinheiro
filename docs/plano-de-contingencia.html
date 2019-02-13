@@ -25,12 +25,28 @@
     <meta property="article:author" content="https://www.facebook.com/">
     <meta property="article:publisher" content="https://www.facebook.com/">
     <meta property="article:tag" content="">
+    <link rel="apple-touch-icon" sizes="57x57" href="/icons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/icons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/icons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/icons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/icons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/icons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/icons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/icons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
     <meta name="apple-mobile-web-app-title" content="Pinheiro Maceió">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-touch-fullscreen" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="blue">
-    <link rel="apple-touch-icon" href="apple-touch-icon.png">
-    <title>SOS pinheiro</title>
+    <link rel="icon" type="image/png" sizes="192x192" href="/icons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/icons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
+    <link rel="manifest" href="/icons/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/icons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <title>Pinheiro Maceió</title>
     <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles/main.css">
     <script src="scripts/vendor/modernizr.js"></script>
@@ -58,6 +74,19 @@
                     <li class="nav-item"><a class="nav-link" href="perguntas-e-respostas.html">Dúvidas Frequentes</a>
                     </li>
                 </ul>
+                <div id="nav-social"><a href="https://www.facebook.com/GovernoAlagoas/" target="_blank" rel="noopener">
+                        <div class="nav-social-icon" id="nav-facebook"></div>
+                    </a><a href="https://www.youtube.com/channel/UCdSzm3SBIfjIKeUH0vnnqAA" target="_blank"
+                        rel="noopener">
+                        <div class="nav-social-icon" id="nav-youtube"></div>
+                    </a><a href="https://twitter.com/GovernoAlagoas" target="_blank" rel="noopener">
+                        <div class="nav-social-icon" id="nav-twitter"></div>
+                    </a><a href="http://www.agenciaalagoas.al.gov.br/solicitacao-de-informacao" target="_blank"
+                        rel="noopener">
+                        <div class="nav-social-icon" id="nav-info"></div>
+                    </a>
+                    <div class="nav-social-icon" id="nav-eouv"></div>
+                </div>
             </div>
         </div>
     </nav>
@@ -90,11 +119,12 @@
                                     com vítima.</div>
                             </div>
                         </div>
-                        <div class="orgao-defesa">
-                            <div class="orgao-info">
-                                <div class="orgao-telefone">0800 030 6205</div>
-                                <div class="orgao-titulo">Defesa Civil Municipal</div>
-                            </div>
+                        <div class="orgao-defesa"><a href="tel:08000306205">
+                                <div class="orgao-info">
+                                    <div class="orgao-telefone">0800 030 6205</div>
+                                    <div class="orgao-titulo">Defesa Civil Municipal</div>
+                                </div>
+                            </a>
                             <div class="orgao-competencias">
                                 <div class="competencia-previa" data-toggle="collapse" href="#collapseExample2"
                                     role="button" aria-expanded="false" aria-controls="collapseExample2">Rachadura,
@@ -105,11 +135,12 @@
                                     necessidade de sair da edificação.</div>
                             </div>
                         </div>
-                        <div class="orgao-defesa">
-                            <div class="orgao-info">
-                                <div class="orgao-telefone">0800 082 0195</div>
-                                <div class="orgao-titulo">CASAL</div>
-                            </div>
+                        <div class="orgao-defesa"><a href="tel:08000820195">
+                                <div class="orgao-info">
+                                    <div class="orgao-telefone">0800 082 0195</div>
+                                    <div class="orgao-titulo">CASAL</div>
+                                </div>
+                            </a>
                             <div class="orgao-competencias">
                                 <div class="competencia-previa" data-toggle="collapse" href="#collapseExample3"
                                     role="button" aria-expanded="false" aria-controls="collapseExample3">Falta de água,
@@ -239,8 +270,15 @@
             </div>
         </div>
     </footer>
-    <script>!function (e, a, t, n, g, c) { e.GoogleAnalyticsObject = n, e.ga || (e.ga = function () { (e.ga.q = e.ga.q || []).push(arguments) }), e.ga.l = +new Date, g = a.createElement(t), c = a.getElementsByTagName(t)[0], g.src = "https://www.google-analytics.com/analytics.js", c.parentNode.insertBefore(g, c) }(window, document, "script", "ga"), ga("create", "UA-XXXXX-X"), ga("send", "pageview")</script>
-    <script src="scripts/vendor.js"></script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-62371147-3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-62371147-3');
+</script>    <script src="scripts/vendor.js"></script>
     <script src="scripts/main.js"></script>
 </body>
 

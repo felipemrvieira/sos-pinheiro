@@ -1,5 +1,5 @@
 // Tela grande
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 901px) {
     #perguntas-e-respostas{
         @include titulo-modulo();
         h3{
@@ -52,7 +52,53 @@
 
 // Tela media
 @media only screen and (max-width: 900px) {
-   
+    #perguntas-e-respostas{
+        @include titulo-modulo();
+        h3{
+            text-align: center;
+        }
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        position: relative;
+        top: -60px;
+
+        #cabecalho-modulo{
+            margin-bottom: 8px;
+        }
+
+        .submodulo{
+            border-radius: $card-radius;
+       
+        
+            .card-body{
+                // margin: 0 64px;
+                .pergunta-resposta{
+                    .pergunta{
+                        margin-bottom: 12px;
+                        font-family: "myriad-semibold";
+                        font-size: 17px;
+                        text-align: center;
+                        color: $azul-escuro;
+                        &:hover{
+                            cursor: pointer;
+                        }
+                    }
+                    .resposta{
+                        font-family: "myriad-regular";
+                        text-align: justify;
+                        color: #8c8c8c;
+                        font-size: 15px;
+                        // line-height: 12px;
+                    }
+                    hr{
+                        opacity: 0.4;
+                    }
+                }
+                
+            }
+        }
+    }
 }
 
 

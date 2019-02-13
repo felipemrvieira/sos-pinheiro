@@ -44,16 +44,39 @@
   * ################################## APPLE
   ***********************************
   -->
+
+
+  <link rel="apple-touch-icon" sizes="57x57" href="icons/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="icons/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="icons/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="icons/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="icons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="icons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="icons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="icons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-icon-180x180.png">
+
   <meta name="apple-mobile-web-app-title" content="Pinheiro Maceió">
   <meta name='apple-mobile-web-app-capable' content='yes'>
   <meta name='apple-touch-fullscreen' content='yes'>
   <meta name='apple-mobile-web-app-status-bar-style' content='blue'>
-  <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <!-- Place favicon.ico in the root directory -->
 
-  <title>SOS pinheiro</title>
 
-  <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css" type="text/css" />
+  <link rel="icon" type="image/png" sizes="192x192" href="icons/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="icons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+  <link rel="manifest" href="icons/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="icons/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <title>Pinheiro Maceió</title>
+
+  
+  <!-- build:css styles/vendor/bootstrap.css -->
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css" type="text/css" />
+  <!-- endbuild -->
 
   <!-- build:css styles/main.css -->
   <link rel="stylesheet" href="styles/main.css">
@@ -115,10 +138,21 @@
             <a class="nav-link" href="perguntas-e-respostas.html">Dúvidas Frequentes</a>
           </li>
         </ul>
-        <!-- <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form> -->
+        <div id="nav-social">
+          <a href="https://www.facebook.com/GovernoAlagoas/" target="_blank" rel="noopener">
+            <div class="nav-social-icon" id="nav-facebook"></div>
+          </a>
+          <a href="https://www.youtube.com/channel/UCdSzm3SBIfjIKeUH0vnnqAA" target="_blank" rel="noopener">
+            <div class="nav-social-icon" id="nav-youtube"></div>
+          </a>
+          <a href="https://twitter.com/GovernoAlagoas" target="_blank" rel="noopener">
+            <div class="nav-social-icon" id="nav-twitter"></div>
+          </a>
+          <a href="http://www.agenciaalagoas.al.gov.br/solicitacao-de-informacao" target="_blank" rel="noopener">
+            <div class="nav-social-icon" id="nav-info"></div>
+          </a>
+          <div class="nav-social-icon" id="nav-eouv"></div>
+        </div>
 
       </div>
     </div>
@@ -169,10 +203,12 @@
               </div>
             </div>
             <div class="orgao-defesa">
-              <div class="orgao-info">
-                <div class="orgao-telefone">0800 030 6205</div>
-                <div class="orgao-titulo">Defesa Civil Municipal</div>
-              </div>
+              <a href="tel:08000306205">
+                <div class="orgao-info">
+                  <div class="orgao-telefone">0800 030 6205</div>
+                  <div class="orgao-titulo">Defesa Civil Municipal</div>
+                </div>
+              </a>
               <div class="orgao-competencias">
                 <div class="competencia-previa" data-toggle="collapse" href="#collapseExample2" role="button"
                   aria-expanded="false" aria-controls="collapseExample2">Rachadura, afundamento, dúvida sobre os
@@ -190,10 +226,12 @@
               </div>
             </div>
             <div class="orgao-defesa">
-              <div class="orgao-info">
-                <div class="orgao-telefone">0800 082 0195</div>
-                <div class="orgao-titulo">CASAL</div>
-              </div>
+              <a href="tel:08000820195">
+                <div class="orgao-info">
+                  <div class="orgao-telefone">0800 082 0195</div>
+                  <div class="orgao-titulo">CASAL</div>
+                </div>
+              </a>
               <div class="orgao-competencias">
                 <div class="competencia-previa" data-toggle="collapse" href="#collapseExample3" role="button"
                   aria-expanded="false" aria-controls="collapseExample3">Falta de água, vazamento, rompimento...</div>
@@ -246,8 +284,8 @@
         <div class="col-lg-12">
           <a href="plano-de-contingencia.html">
             <picture>
-              <source media="(max-width: 600px)" srcset="images/contingencia-mobile2.jpg">
-              <img src="images/contingencia.png" alt="Plano de contingência">
+              <source media="(max-width: 600px)" srcset="images/plano-contingencia-mobile.jpg">
+              <img src="images/plano-contingencia.png" alt="Plano de contingência">
             </picture>
           </a>
         </div>
@@ -261,12 +299,12 @@
         <div class="col-lg-6">
           <div class="card" id="card-mapa">
             <div class="card-header">
-              <h3 class="titulo-modulo">Mapa de Instabilidade</h3>
-              <p class="descricao-modulo">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+              <h3 class="titulo-modulo">Mapa</h3>
+              <p class="descricao-modulo">Confira aqui os pontos de apoio!</p>
             </div>
             <div class="card-body">
               <div id="mapa">
-                <iframe src="https://www.google.com/maps/d/embed?mid=11FGFOjMlPOPV2G7abPVRdH9dggmS2hBA" width="100%"
+                <iframe src="https://www.google.com/maps/d/u/1/embed?mid=1YdIOOoJT1XqqFzeWHA8hOTI0EauJb4tv" width="100%"
                   title="Mapa de instabilidade"></iframe>
               </div>
             </div>
@@ -285,57 +323,22 @@
             <div class="card-body">
               <div class="noticias-container">
 
-                <!-- Notícia -->
-                <div class="noticia">
-                  <img class="noticia-destaque" src="images/destaque-noticia.png" alt="destaque">
-                  <div class="noticia-info">
-                    <p class="noticia-chapeu">Em alerta</p>
-                    <p class="noticia-titulo">Lorem ipsum dolor si amet, consectetur adipisicing elit</p>
-                    <p class="noticia-bigode">Sed do eiusmod tempor incidutum ut labore et dolore magna aliqua.</p>
-                  </div>
-                </div>
-                <hr>
-                <!-- Notícia -->
-                <!-- Notícia -->
-                <div class="noticia">
-                  <img class="noticia-destaque" src="images/destaque-noticia.png" alt="destaque">
-                  <div class="noticia-info">
-                    <p class="noticia-chapeu">Em alerta</p>
-                    <p class="noticia-titulo">Lorem ipsum dolor si amet, consectetur adipisicing elit</p>
-                    <p class="noticia-bigode">Sed do eiusmod tempor incidutum ut labore et dolore magna aliqua.</p>
-                  </div>
-                </div>
-                <hr>
-                <!-- Notícia -->
-                <!-- Notícia -->
-                <div class="noticia">
-                  <img class="noticia-destaque" src="images/destaque-noticia.png" alt="destaque">
-                  <div class="noticia-info">
-                    <p class="noticia-chapeu">Em alerta</p>
-                    <p class="noticia-titulo">Lorem ipsum dolor si amet, consectetur adipisicing elit</p>
-                    <p class="noticia-bigode">Sed do eiusmod tempor incidutum ut labore et dolore magna aliqua.</p>
-                  </div>
-                </div>
-                <hr>
-                <!-- Notícia -->
-                <!-- Notícia -->
-                <div class="noticia">
-                  <img class="noticia-destaque" src="images/destaque-noticia.png" alt="destaque">
-                  <div class="noticia-info">
-                    <p class="noticia-chapeu">Em alerta</p>
-                    <p class="noticia-titulo">Lorem ipsum dolor si amet, consectetur adipisicing elit</p>
-                    <p class="noticia-bigode">Sed do eiusmod tempor incidutum ut labore et dolore magna aliqua.</p>
-                  </div>
-                </div>
-                <hr>
-                <!-- Notícia -->
+                <a id="link-noticias" href="http://www.agenciaalagoas.al.gov.br/pinheiro" target="_blank" rel="noopener">
+                  <img src="images/ultimas-noticias.jpg" alt="Ultimas noticias">
+                </a>
 
               </div>
             </div>
             <div class="card-footer text-muted">
-              <a href="#">
+              <!-- <a href="#">
                 <img src="images/podcast.png" alt="Podcast">
-              </a>
+              </a> -->
+              <a href="http://www.maceio.al.gov.br/" target="_blank" rel="noopener">Confira aqui as notícias da
+                prefeitura</a>
+              <br>
+              <a href="http://www.cprm.gov.br/publique/Gestao-Territorial/Prevencao-de-Desastres-Naturais/Acao-Emergencial-no-Bairro-Pinheiro-%28Maceio%2C-AL%29-5344.html"
+                target="_blank" rel="noopener">Confira aqui as notícias da CPRM</a>
+
             </div>
           </div>
           <!-- card -->
@@ -388,7 +391,7 @@
     <section id="banners-diversos" class="container">
       <div class="row linha-banners">
         <div id="banner1" class="col-md-6">
-          <a href="#"><img src="images/duvidas.png" alt="duvidas"></a>
+          <a href="perguntas-e-respostas.html"><img src="images/duvidas.png" alt="duvidas"></a>
         </div>
         <div id="banner2" class="col-md-6">
           <a href="#"><img src="images/aplicativo.png" alt="aplicativo"></a>
@@ -420,7 +423,11 @@
 
               <!-- Perguntas e respostas -->
               <div class="pergunta-resposta">
-                <div class="pergunta" data-toggle="collapse" href="#pergunta1" role="button" aria-expanded="false"
+                <div class="pergunta" 
+                data-toggle="collapse" 
+                href="#pergunta1" 
+                role="button" 
+                aria-expanded="false"
                   aria-controls="pergunta1">
                   Rachaduras e afundamentos
                 </div>
@@ -442,11 +449,15 @@
               <!-- Perguntas e respostas -->
               <!-- Perguntas e respostas -->
               <div class="pergunta-resposta">
-                <div class="pergunta" data-toggle="collapse" href="#pergunta1" role="button" aria-expanded="false"
-                  aria-controls="pergunta1">
+                <div class="pergunta" 
+                data-toggle="collapse" 
+                href="#pergunta2" 
+                role="button" 
+                aria-expanded="false"
+                  aria-controls="pergunta2">
                   Cadastro e remoção de moradores
                 </div>
-                <div class="resposta collapse" id="pergunta1">
+                <div class="resposta collapse" id="pergunta2">
                   <p>
                     A Prefeitura de Maceió faz o levantamento e o cadastro das famílias que residem nos imóveis
                     atingidos.
@@ -464,11 +475,15 @@
 
               <!-- Perguntas e respostas -->
               <div class="pergunta-resposta">
-                <div class="pergunta" data-toggle="collapse" href="#pergunta1" role="button" aria-expanded="false"
-                  aria-controls="pergunta1">
+                <div class="pergunta" 
+                data-toggle="collapse" 
+                href="#pergunta3" 
+                role="button" 
+                aria-expanded="false"
+                  aria-controls="pergunta3">
                   Aluguel Social
                 </div>
-                <div class="resposta collapse" id="pergunta1">
+                <div class="resposta collapse" id="pergunta3">
                   <p>
                     A Prefeitura de Maceió está fazendo, desde o começo de janeiro de 2019, o
                     cadastro de famílias que receberam recomendação da Defesa Civil Municipal
@@ -477,9 +492,7 @@
                     estão aptas a receber a ajuda humanitária do Governo Federal.
                   </p>
                   <p>
-                    O Governo Federal já começou a repassar as verbas e, inicialmente, foram
-                    contempladas com o primeiro lote as 80 famílias que tiveram os imóveis mais danificados
-                    e que, portanto, foram classificados como de maior risco. O valor para cada proprietário
+                    O Governo Federal já começou a repassar as verbas. O valor para cada proprietário
                     é de R$ 1 mil mensais por seis meses, totalizando R$ 480 mil em recursos. O benefício
                     pode ser renovado, segundo portaria do Ministério do Desenvolvimento Regional.
                   </p>
@@ -506,11 +519,15 @@
 
               <!-- Perguntas e respostas -->
               <div class="pergunta-resposta">
-                <div class="pergunta" data-toggle="collapse" href="#pergunta1" role="button" aria-expanded="false"
-                  aria-controls="pergunta1">
+                <div class="pergunta" 
+                data-toggle="collapse" 
+                href="#pergunta4" 
+                role="button" 
+                aria-expanded="false"
+                  aria-controls="pergunta4">
                   Plano de Evacuação
                 </div>
-                <div class="resposta collapse" id="pergunta1">
+                <div class="resposta collapse" id="pergunta4">
                   <p>
                     O Plano de Contingência prevê rotas de fuga (vias às quais a população deve recorrer caso o Plano de
                     Contingência seja ativado) e pontos de encontro (locais para onde os moradores devem se dirigir para
@@ -554,11 +571,15 @@
               <!-- Perguntas e respostas -->
               <!-- Perguntas e respostas -->
               <div class="pergunta-resposta">
-                <div class="pergunta" data-toggle="collapse" href="#pergunta1" role="button" aria-expanded="false"
-                  aria-controls="pergunta1">
+                <div class="pergunta" 
+                data-toggle="collapse" 
+                href="#pergunta5" 
+                role="button" 
+                aria-expanded="false"
+                  aria-controls="pergunta5">
                   Acidentes e Socorro
                 </div>
-                <div class="resposta collapse" id="pergunta1">
+                <div class="resposta collapse" id="pergunta5">
                   <p>
                     Em casos de ocorrências envolvendo vítimas, a Defesa Civil Estadual atua, por meio do
                     Corpo de
@@ -582,11 +603,15 @@
               <!-- Perguntas e respostas -->
               <!-- Perguntas e respostas -->
               <div class="pergunta-resposta">
-                <div class="pergunta" data-toggle="collapse" href="#pergunta1" role="button" aria-expanded="false"
-                  aria-controls="pergunta1">
+                <div class="pergunta" 
+                data-toggle="collapse" 
+                href="#pergunta6" 
+                role="button" 
+                aria-expanded="false"
+                  aria-controls="pergunta6">
                   CASAL
                 </div>
-                <div class="resposta collapse" id="pergunta1">
+                <div class="resposta collapse" id="pergunta6">
                   <p>
                     Em casos de interrupção no abastecimento de água, vazamentos e rompimentos de canos e
                     tubulações em casas, apartamentos e/ou ruas, é necessário entrar em contato com a
@@ -614,11 +639,15 @@
 
               <!-- Perguntas e respostas -->
               <div class="pergunta-resposta">
-                <div class="pergunta" data-toggle="collapse" href="#pergunta1" role="button" aria-expanded="false"
-                  aria-controls="pergunta1">
+                <div class="pergunta" 
+                data-toggle="collapse"
+                 href="#pergunta7" 
+                 role="button" 
+                 aria-expanded="false"
+                  aria-controls="pergunta7">
                   Causas Possíveis
                 </div>
-                <div class="resposta collapse" id="pergunta1">
+                <div class="resposta collapse" id="pergunta7">
                   <p>
                     O Serviço Geológico do Brasil (CPRM) trabalha com as seguintes hipóteses:
                   </p>
@@ -644,11 +673,15 @@
               <!-- Perguntas e respostas -->
               <!-- Perguntas e respostas -->
               <div class="pergunta-resposta">
-                <div class="pergunta" data-toggle="collapse" href="#pergunta1" role="button" aria-expanded="false"
-                  aria-controls="pergunta1">
+                <div class="pergunta" 
+                data-toggle="collapse" 
+                href="#pergunta8" 
+                role="button" 
+                aria-expanded="false"
+                  aria-controls="pergunta8">
                   Relatórios e Estudos
                 </div>
-                <div class="resposta collapse" id="pergunta1">
+                <div class="resposta collapse" id="pergunta8">
                   <ul>
                     <li>
                       <a
@@ -669,11 +702,15 @@
               <!-- Perguntas e respostas -->
               <!-- Perguntas e respostas -->
               <div class="pergunta-resposta">
-                <div class="pergunta" data-toggle="collapse" href="#pergunta1" role="button" aria-expanded="false"
-                  aria-controls="pergunta1">
+                <div class="pergunta" 
+                data-toggle="collapse" 
+                href="#pergunta9" 
+                role="button" 
+                aria-expanded="false"
+                  aria-controls="pergunta9">
                   Força-Tarefa
                 </div>
-                <div class="resposta collapse" id="pergunta1">
+                <div class="resposta collapse" id="pergunta9">
                   <p>
                     Três órgãos do Governo Federal atuam em Maceió:
                   </p>
@@ -775,16 +812,16 @@
 
 
   <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-  <script>
-    (function (b, o, i, l, e, r) {
-      b.GoogleAnalyticsObject = l; b[l] || (b[l] =
-        function () { (b[l].q = b[l].q || []).push(arguments) }); b[l].l = +new Date;
-      e = o.createElement(i); r = o.getElementsByTagName(i)[0];
-      e.src = 'https://www.google-analytics.com/analytics.js';
-      r.parentNode.insertBefore(e, r)
-    }(window, document, 'script', 'ga'));
-    ga('create', 'UA-XXXXX-X'); ga('send', 'pageview');
-  </script>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-62371147-3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-62371147-3');
+</script>
 
   <!-- build:js scripts/vendor.js -->
 

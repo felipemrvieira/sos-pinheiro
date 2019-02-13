@@ -12,6 +12,13 @@
                 padding-top: 0;
             }
             .noticias-container{
+                #link-noticias{
+                    img{
+                        width: 100%;
+                        max-width: 100%;
+                        overflow: hidden;
+                    }
+                }
                 height: 450px;
                 overflow-y: scroll;
                 width: 100%;
